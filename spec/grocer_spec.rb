@@ -315,7 +315,7 @@ cart = [avocado, avocado, kale]
         beer = find_item('BEER')
         cart = Array.new(10, beer)
         expect(checkout(cart, [])).to eq(117.00)
-        coupons.include
+        coupons.include ('CHEESE', 'AVOCADO', 'BEER', 'PEANUTBUTTER')
       end
     end
   end
